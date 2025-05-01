@@ -19,8 +19,6 @@ output_file = sys.argv[1]
 
 torch.manual_seed(33)
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "4"
-
 # Add these lines to check CUDA availability
 print(f"CUDA available: {torch.cuda.is_available()}")
 if torch.cuda.is_available():
